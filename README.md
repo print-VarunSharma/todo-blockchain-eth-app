@@ -4,6 +4,8 @@
 
 Create & Deploy a simple TODO list app to the blockchain!
 
+From this turtorial: https://www.youtube.com/watch?v=coQ5dg8wM2o&t=3600s
+
 ## Project Dependencies
 
 1. https://trufflesuite.com/ganache/
@@ -33,3 +35,15 @@ Create & Deploy a simple TODO list app to the blockchain!
    todoList.address
    taskCount = await todoList.taskCount()
    taskCount.toNumber()
+   task = await todoList.tasks(1)
+   task
+   task.content
+
+9. Once you've updated a contract run: truffle migrate --reset
+
+## TODO:
+
+1. List tasks in the smart contract
+2. List tasks in the console
+3. List tasks in the client side application
+4. List tasks in the test
